@@ -26,9 +26,6 @@ function WHCheckCookies() {
         message_container.innerHTML = html_code;
         document.body.appendChild(message_container);
     }
-    if (WHReadCookie('jediGame') === 'avaliable') {
-        gameAvaliable = 1;
-    }
 }
 
 function WHCloseCookiesWindow() {

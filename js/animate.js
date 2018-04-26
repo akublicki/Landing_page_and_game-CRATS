@@ -42,7 +42,7 @@ function check_if_in_view() {
             }
         }
 
-        if (gameAvaliable === 1 && gameFirstTime === 1 && window_top_position >= $('#gamePlace').offset().top) {
+        if (gameFirstTime === 1 && window_top_position >= $('#gamePlace').offset().top) {
             $('#gamePlace').slideDown(5000);
             gameFirstTime = 0;
         }

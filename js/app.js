@@ -5,7 +5,6 @@ $('.signUp').on('click', function () {
     if ($('#singUpEmail').val().indexOf('@') > -1) {
         var $this = $(this);
         $this.button('loading');
-        WHCreateCookie('jediGame', 'avaliable', 183);
         $('#singUpForm').submit();
     } else {
         alert("Musisz podać adres email");

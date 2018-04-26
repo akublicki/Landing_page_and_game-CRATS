@@ -1,13 +1,8 @@
-var gameAvaliable = 0;
 var $gamePlace = $('#game');
-var $playArea = $('.playArea');
 var $playButton = $('#play');
 var $stopButton = $('#stop');
 var $coverRound = $('#coverRound');
 var $roundText = $('#roundText');
-var $levelText = $('#level');
-var timeText = $('#timeToEnd');
-var $gameScoreText = $('#gameScore');
 var soundOpenDoor = document.createElement('audio');
 soundOpenDoor.src = "sounds/open.mp3";
 var soundCloseDoor = document.createElement('audio');
@@ -128,7 +123,7 @@ function CreateGame() {
         for (var i = 0; i < levelL; i++) {
             gameArea[i] = new CreateBox(i);
         }
-        gameArea.forEach(function (area, index) {
+        gameArea.forEach(function (area) {
             area.insertBox(levelL);
         })
     };
@@ -282,7 +277,6 @@ function CreateGame() {
     }
 
     $('#scoreTableButton').click(function () {
-        var level;
         $('#gameEnd').hide();
         $('#scores').show();
     });
